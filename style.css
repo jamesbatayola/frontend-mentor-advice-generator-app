@@ -84,12 +84,14 @@ button {
 }
 
 figure {
+	width: auto;
+	height: auto;
 	display: grid;
 	padding: 1.1rem;
 	bottom: -1.7rem;
 	cursor: pointer;
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 50vw;
 	aspect-ratio: 1 / 1;
 	place-items: center;
 	background-color: var(--Neon-Green);
@@ -97,6 +99,10 @@ figure {
 
 figure:hover {
 	box-shadow: 0 0 17px hsla(150, 100%, 66%, 0.76);
+}
+
+.attribution {
+	display: none;
 }
 
 @media screen and (min-width: 545px) {
@@ -112,5 +118,20 @@ figure:hover {
 
 	.divider-desktop {
 		display: block;
+	}
+
+	.attribution {
+		left: 50%;
+		bottom: 1rem;
+		display: block;
+		text-wrap: nowrap;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+
+	.attribution,
+	a {
+		color: hsl(218, 11%, 45%);
+		font-size: 15px;
 	}
 }

@@ -14,10 +14,10 @@
 }
 
 body {
-	min-height: 100svh;
 	display: flex;
-	justify-content: center;
+	min-height: 100svh;
 	align-items: center;
+	justify-content: center;
 	background-color: var(--Dark-Blue);
 }
 
@@ -100,6 +100,9 @@ figure:hover {
 }
 
 @media screen and (min-width: 545px) {
+	body {
+		min-height: 100vh;
+	}
 	.container {
 		max-width: 500px;
 	}

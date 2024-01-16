@@ -51,6 +51,7 @@ button {
 	position: relative;
 	align-items: center;
 	margin-inline: 10px;
+	margin-bottom: 8rem;
 	border-radius: 1rem;
 	padding: 2.5rem 1rem;
 	flex-direction: column;
@@ -111,6 +112,7 @@ figure:hover {
 	}
 	.container {
 		max-width: 500px;
+		margin-bottom: 0;
 	}
 	.divider-mobile {
 		display: none;
